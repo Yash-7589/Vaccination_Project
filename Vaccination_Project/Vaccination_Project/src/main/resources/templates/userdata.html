@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+</head>
+<body>
+    <h1>People List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>ID Type</th>
+                <th>Contact</th>
+                <th>ID Number</th>
+                <th>vaccin Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.idType}"></td>
+                <td th:text="${user.contact}"></td>
+                <td th:text="${user.idNumber}"></td>
+                <td th:text="${user.vaccinationName}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

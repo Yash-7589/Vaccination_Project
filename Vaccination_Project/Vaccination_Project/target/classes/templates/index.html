@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            text-align: center;
+        }
+        body{
+            background-color: azure;
+        }
+        div.registration-form{
+            width: 500px;
+            margin: 100px auto;
+            border: 2px solid black;
+            background-color: beige;
+        }
+        div#submit{
+            width: 200px;
+            height: 50px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="registration-form">
+        <h2>Registration Form</h2>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label><br>
+                <input type="tel" id="contact" name="contact" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="idType">Government ID Type:</label><br>
+                <select id="idType" name="idType">
+                    <option value="aadhar">Aadhar</option>
+                    <option value="passport">Passport</option>
+                    <option value="drivingLicense">Driving License</option>
+                    <option value="voterId">Voter ID</option>
+                </select><br><br>
+            </div> 
+            <div class="form-group">
+                <label for="idNumber">ID Number:</label><br>
+                <input type="text" id="idNumber" name="idNumber" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="vaccinationName">Vaccination Name:</label><br>
+                <select id="vaccinationName" name="vaccinationName">
+                    <option value="Covaxin">Covaxin</option>
+                    <option value="Covishield">Covishield</option>
+                    <option value="Sputnik">Sputnik</option>
+                </select><br><br>
+            </div>
+            <div class="form-group">
+                <input id ="submit" type="submit" value="Submit">
+            </div><br><br>
+            <div><a href="/users">All Users</a></div>
+        </form>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
